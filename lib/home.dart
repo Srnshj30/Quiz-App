@@ -5,41 +5,38 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(context) {
-    return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 96, 188, 180),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image.asset(
-            'assets/images/quiz-logo.png',
-            color: const Color.fromARGB(255, 91, 93, 95),
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Image.asset(
+          'assets/images/quiz-logo.png',
+          color: Colors.white,
+        ),
+        const SizedBox(
+          height: 45,
+        ),
+        const Text(
+          'Learn Flutter the fun way!',
+          style: TextStyle(
+            fontSize: 22,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
           ),
-          const SizedBox(
-            height: 45,
-          ),
-          const Text(
-            'Learn Flutter the fun way!',
+        ),
+        const SizedBox(
+          height: 15,
+        ),
+        OutlinedButton(
+          onPressed: () {},
+          child: const Text(
+            'Start Quiz',
             style: TextStyle(
-              fontSize: 22,
               fontWeight: FontWeight.bold,
-              color: Color.fromARGB(255, 91, 93, 95),
+              color: Colors.white,
             ),
           ),
-          const SizedBox(
-            height: 15,
-          ),
-          OutlinedButton(
-            onPressed: () {},
-            child: const Text(
-              'Start Quiz',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                color: Color.fromARGB(255, 91, 93, 95),
-              ),
-            ),
-          ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
